@@ -1,0 +1,271 @@
+@import './valiables';
+
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+
+
+
+    &__button {
+        display: flex;
+        background-color: #47bdbf;
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        top: 4.5rem;
+        right: 4.5rem;
+
+        z-index: 2000;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1rem 3rem rgba(#000, .1);
+        cursor: pointer;
+
+        @include mq(lg) {
+            height: 5rem;
+            width: 5rem;
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include mq(md) {
+            height: 4rem;
+            width: 4rem;
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+
+        @include mq(sm) {
+            height: 3rem;
+            width: 3rem;
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+
+    }
+
+
+    &__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 4.5rem;
+        right: 4.5rem;
+        background-image: radial-gradient(#009ea1, #02b0b3);
+        z-index: 1000;
+        transition: transform .5s;
+
+        @include mq(lg) {
+            height: 5rem;
+            width: 5rem;
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include mq(md) {
+            height: 4rem;
+            width: 4rem;
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+
+        @include mq(sm) {
+            height: 3rem;
+            width: 3rem;
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+
+        // transform: scale(40);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+
+    &__nav {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.67, -0.5, .06, 1.4);
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: left;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: white;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            @include mq(lg) {
+                font-size: 4rem;
+            }
+
+            @include mq(md) {
+                font-size: 3rem;
+            }
+
+            @include mq(sm) {
+                font-size: 2rem;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+        }
+
+        span {
+            margin-right: 1.2rem;
+            display: inline-block;
+        }
+    }
+
+    &__checkbox:checked~&__background {
+        transform: scale(100);
+    }
+
+    &__checkbox:checked~&__nav {
+        opacity: 1;
+        width: 100%;
+    }
+
+    &__icon {
+        position: relative;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 5px;
+            background-color: #f5f5f5;
+            display: inline-block;
+
+            @include mq(lg) {
+                width: 3rem;
+                height: 5px;
+            }
+
+            @include mq(md) {
+                width: 2rem;
+                height: 4px;
+            }
+
+            @include mq(sm) {
+                width: 1rem;
+                height: 3px;
+            }
+
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -.8rem;
+
+            @include mq(lg) {
+                top: -.8rem;
+            }
+
+            @include mq(md) {
+                top: -.6rem;
+            }
+
+            @include mq(sm) {
+                top: -.4rem;
+            }
+        }
+
+        &::after {
+            top: .8rem;
+
+            @include mq(lg) {
+                top: .8rem;
+            }
+
+            @include mq(md) {
+                top: .6rem;
+            }
+
+            @include mq(sm) {
+                top: .4rem;
+            }
+        }
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+
+        @include mq(lg) {
+            top: -1rem;
+        }
+
+        @include mq(md) {
+            top: -.5rem;
+        }
+
+        @include mq(sm) {
+            top: -.3rem;
+        }
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+
+        @include mq(lg) {
+            top: 1rem;
+        }
+
+        @include mq(md) {
+            top: .5rem;
+        }
+
+        @include mq(sm) {
+            top: .3rem;
+        }
+    }
+
+    &__checkbox:checked+&__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked+&__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked+&__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}

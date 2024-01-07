@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,11 +12,18 @@
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "@vercel/blob": "^0.16.1",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "embla-carousel-autoplay": "^8.0.0-rc07",
+    "embla-carousel-class-names": "^8.0.0-rc07",
+    "embla-carousel-react": "^8.0.0-rc07",
     "next": "13.4.8",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.63.6",
+    "swr": "^2.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
   }
