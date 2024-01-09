@@ -30,7 +30,7 @@ const Masthead: FC = () => {
             }}
         >
             <video autoPlay loop muted playsInline className='  absolute w-full h-full object-cover'>
-                <source src="/top_movie.mp4" type="video/mp4; codecs+hvc1" />
+                <source src="https://rpk6snz1bj3dcdnk.public.blob.vercel-storage.com/top_movie-1tchUijLH0PjTtfbukSK6TfiNP2xWN.mp4" type="video/mp4; codecs+hvc1" />
             </video>
 
             <div className="transform translate-y-20  p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col">
