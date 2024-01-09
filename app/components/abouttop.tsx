@@ -26,8 +26,8 @@ const AboutTop: FC = () => {
                 transform: `translateY(-${progress * 20}vh)`
             }}
         >
-                        <Image 
-                src="/abouttoo.jpg" // 画像のパス
+            <Image 
+                src="/abouttoo.jpg" // 画像のパス 
                 layout='fill' // レイアウト設定
                 objectFit='cover' // 画像のフィット設定
                 quality={100} // 画像品質

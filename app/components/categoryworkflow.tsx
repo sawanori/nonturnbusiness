@@ -5,24 +5,13 @@ import { CategoryWorkFlowBox } from './categoryworkflowbox';
 import PriceCard from './pricecard';
 
 interface props {
-    image: string
-    worktitle: string
-    readtime: string
-    flow1: string
-    flow2: string
-    section1: string
-    section2: string
-    section3: string
-    section4: string
-    section5: string
-    section6: string
     textcolor1: string
     textcolor2: string
     toColor: string
-    Children: React.ReactNode
+    children: React.ReactNode
 }
 
-export const CategoryWorkflow: FC<props> = ({ image, worktitle, flow1, flow2, readtime, section1, section2, section3, section4, section5, section6, textcolor1, textcolor2, toColor, children }) => {
+export const CategoryWorkflow: FC<props> = ({  textcolor1, textcolor2, toColor, children }) => {
     return (
         <section className='bg-white min-h-full pb-20'>
 

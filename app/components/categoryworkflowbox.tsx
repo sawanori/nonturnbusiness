@@ -8,16 +8,12 @@ interface workflowbox {
     worktitle: string
     readtime: string
     flow1: string
-    flow2: string
     section1: string
     section2: string
     section3: string
-    section4: string
-    section5: string
-    section6: string
 }
 
-export const CategoryWorkFlowBox: FC<workflowbox> = ({ image, worktitle, readtime, flow1, flow2, section1, section2, section3, section4, section5, section6 }) => {
+export const CategoryWorkFlowBox: FC<workflowbox> = ({ image, worktitle, readtime, flow1, section1, section2, section3}) => {
     return (
         <div className="">
 
@@ -50,18 +46,6 @@ export const CategoryWorkFlowBox: FC<workflowbox> = ({ image, worktitle, readtim
                                     <li className='mb-4'>{section3}</li>
                                 </ol>
                             </div>
-                            <div>
-                                {flow2 ? <h2 className='font-bold text-red-500 text-xl mb-2'>{flow2}</h2> : ''}
-                                {section4 ?
-                                    <ol className='list-disc transform translate-x-6'>
-                                        <li>{section4}</li>
-                                        <li>{section5}</li>
-                                        <li>{section6}</li>
-                                    </ol>
-                                    : ''}
-
-                            </div>
-
                         </section>
                     </div>
                 </div>

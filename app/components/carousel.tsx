@@ -1,15 +1,13 @@
-"use client"
-
 import React, { FC, createContext, ReactNode, useState, useCallback } from 'react'
-import { EmblaCarouselType, } from "embla-carousel-react"
-import ClassNames from 'embla-carousel-class-names'
+// EmblaCarouselType の代わりに any を使用
 import useEmblaCarousel from 'embla-carousel-react'
+import ClassNames from 'embla-carousel-class-names'
 import Autoplay from 'embla-carousel-autoplay'
 import styles from "../styles/carousel.module.css"
 import { useEffect } from 'react';
 
 interface ContextValue {
-    embla: EmblaCarouselType | undefined
+    embla: any | undefined  // EmblaCarouselType の代わりに any を使用
     selectedIndex: number
 }
 
@@ -22,7 +20,6 @@ export const CarouselContext = createContext<ContextValue>({
     embla: undefined,
     selectedIndex: -1
 })
-
 
 export const Carousel: FC<Props> = ({ children, className }) => {
     const [selectedIndex, setSelectedIndex] = useState(0)

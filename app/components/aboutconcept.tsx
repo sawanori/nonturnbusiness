@@ -21,7 +21,7 @@ export const AboutConcept = () => {
                                 <p className='text-xl md:text-xl lg:text-2xl  xl:text-3xl tracking-tight'>ホームページやSNSを使って<br />自社の認知を広めたいが<br />自信を持って表に出せる<br/>宣伝素材がなく<br/>結果、手付かずになる</p>
                             </WorkLeft>
                             <WorkRight progress={progress}>
-                                <Image src="/verticaal.jpg" layout='responsive' width={100} height={100} />
+                                <Image src="/verticaal.jpg" alt="説明文" layout='responsive' width={100} height={100} />
                             </WorkRight>
                         </WorkContainer>
                     }
@@ -36,7 +36,7 @@ export const AboutConcept = () => {
 
                             </WorkLeft>
                             <WorkRight progress={progress}>
-                                <Image src="/photo.jpg" layout='responsive' width={100} height={100} />
+                                <Image src="/photo.jpg" alt="説明文" layout='responsive' width={100} height={100} />
                             </WorkRight>
                         </WorkContainer>
 
@@ -52,7 +52,7 @@ export const AboutConcept = () => {
 
                             </WorkLeft>
                             <WorkRight progress={progress}>
-                                <Image src="/web.jpg" layout='responsive' width={100} height={100} />
+                                <Image src="/web.jpg" alt="説明文" layout='responsive' width={100} height={100} />
                             </WorkRight>
                         </WorkContainer>
                     }

@@ -21,7 +21,7 @@ export const Works = () => {
                                 <p className='text-xl md:text-xl lg:text-2xl  xl:text-3xl tracking-tight'>企業VPやブランディング動画を<br />メインに企業力が高められる<br />動画の撮影編集を実施</p>
                             </WorkLeft>
                             <WorkRight progress={progress}>
-                                <Image src="/verticaal.jpg" layout='responsive' width={100} height={100} />
+                                <Image src="/verticaal.jpg" alt='works'  layout='responsive' width={100} height={100} />
                             </WorkRight>
                         </WorkContainer>
                     }
@@ -36,7 +36,7 @@ export const Works = () => {
 
                             </WorkLeft>
                             <WorkRight progress={progress}>
-                                <Image src="/photo.jpg" layout='responsive' width={100} height={100} />
+                                <Image src="/photo.jpg" alt='works' layout='responsive' width={100} height={100} />
                             </WorkRight>
                         </WorkContainer>
 
@@ -52,7 +52,7 @@ export const Works = () => {
 
                             </WorkLeft>
                             <WorkRight progress={progress}>
-                                <Image src="/web.jpg" layout='responsive' width={100} height={100} />
+                                <Image src="/web.jpg" alt='works' layout='responsive' width={100} height={100} />
                             </WorkRight>
                         </WorkContainer>
                     }

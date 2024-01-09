@@ -20,6 +20,7 @@ export const Products: FC<Props> = ({ id, title, description, link }) => {
                     src={`/${id}.jpg`}
                     width={600}
                     height={400}
+                    alt='Products'
                 />
             <div className="p-5">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
