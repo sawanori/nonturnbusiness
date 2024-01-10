@@ -50,7 +50,7 @@ return (
        title="イベント写真撮影プラン" 
        price="1H:￥20,000※２Hからご予約可能"
        description="結婚式二次会などのイベントの空気感をそのまま写真に切り取ります！撮影日から３日以内のスピード納品！現像まで行うプランです、凝ったレタッチのご対応は出来かねます。 "
-       imageUrl="/photo.jpg"
+       imageUrl="/photo1.jpg"
        imageAlt="画像の説明" 
       />
 
@@ -58,7 +58,7 @@ return (
        title="商品撮影プラン" 
        price="2H:￥50,000"
        description="あなたが魅力的に見せたい商品（ex:料理、ECショップ商品）をより魅力的に写真に納めます。撮影日から１週間以内の納品！現像まで行うプランです。表示は税抜です。"
-       imageUrl="/photo.jpg"
+       imageUrl="/photo2.jpg"
        imageAlt="画像の説明" 
       />
     </>
