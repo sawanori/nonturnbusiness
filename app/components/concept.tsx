@@ -35,11 +35,11 @@ export const Concept: FC = () => {
         <div ref={refContainer} className='bg-gradient-to-r from-gray-200 to-gray-100 text-black '>
             <div className='min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-5xl lg:text-6xl tracking-tight font-semibold'>
                 <div className='leading-[2.7]'>
-                    <div><h3 className={`${s.skillText} inline-block leading-tight after:content-['_']`} style={{ opacity: opacityForBlock(progress, 0) }}>NonTurnは </h3></div>
-                    <div><h3 className={`${s.skillText} inline-block leading-tight after:content-['_']`} style={{ opacity: opacityForBlock(progress, 1) }}>お客様の魅力の発見・発信</h3></div>
-                    <div><h3 className={`${s.skillText} inline-block leading-tight`} style={{ opacity: opacityForBlock(progress, 2) }} >改善可能な負の解消を通し</h3></div>
-                    <div><h3 className={`${s.skillText} inline-block leading-tight`} style={{ opacity: opacityForBlock(progress, 3) }} >お客様をサポートしていく</h3></div>
-                    <div> <h3 className={`${s.skillText} inline-block leading-tight`} style={{ opacity: opacityForBlock(progress, 4) }} >クリエイターカンパニーです。</h3></div>
+                    <div><h3 className={`${s.skillText} inline-block leading-none after:content-['_']`} style={{ opacity: opacityForBlock(progress, 0) }}>NonTurnは </h3></div>
+                    <div><h3 className={`${s.skillText} inline-block leading-none after:content-['_']`} style={{ opacity: opacityForBlock(progress, 1) }}>お客様の魅力の発見・発信</h3></div>
+                    <div><h3 className={`${s.skillText} inline-block leading-none`} style={{ opacity: opacityForBlock(progress, 2) }} >改善可能な負の解消を通し</h3></div>
+                    <div><h3 className={`${s.skillText} inline-block leading-none`} style={{ opacity: opacityForBlock(progress, 3) }} >お客様をサポートしていく</h3></div>
+                    <div> <h3 className={`${s.skillText} inline-block leading-none`} style={{ opacity: opacityForBlock(progress, 4) }} >クリエイターカンパニーです。</h3></div>
                 </div>
             </div>
         </div >
