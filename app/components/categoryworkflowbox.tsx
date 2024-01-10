@@ -21,7 +21,7 @@ export const CategoryWorkFlowBox: FC<workflowbox> = ({ image, worktitle, readtim
 
                 <div className="md:h-80 flex flex-col items-center sm:flex-row overflow-hidden">
 
-                    <div className='flex w-full sm:w-1/2 lg:w-2/5 h-48 sm:h-auto order-first sm:border-none'  >
+                    <div className='flex w-full sm:w-1/2 lg:w-2/5 h-auto sm:h-auto order-first sm:border-none justify-center items-center'  >
                         <Image src={image} layout="intrinsic" width='350' height='250' objectFit="contain" alt='ponchan' />
                     </div>
 

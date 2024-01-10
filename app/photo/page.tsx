@@ -17,7 +17,7 @@ return (
       toColor="背景色"
      >
          <CategoryWorkFlowBox
-         image="/photo.jpg"
+         image="/mtg.png"
          worktitle="ヒアリング"
          readtime="３日以内"
          flow1="撮影の目的や内容をヒアリングした上で、必要な撮影拘束時間の設定とそれに価格費用感をお伝えさせていただきます。"
@@ -26,7 +26,7 @@ return (
          section3="見積もり作成"
         />
         <CategoryWorkFlowBox
-         image="/photo.jpg"
+         image="/still.png"
          worktitle="撮影"
          readtime="３日以内"
          flow1="ご指定の場所・日時にカメラマンが必要機材を持ち込み、撮影を行います"
@@ -35,7 +35,7 @@ return (
          section3="　撮影中は必ずご担当者様に同席頂き、ご確認いただきながら進めていただきますようお願いします。"
         />
         <CategoryWorkFlowBox
-         image="/photo.jpg"
+         image="/finish.png"
          worktitle="納品"
          readtime="３日以内"
          flow1="データ便（ex:ギガファイル便）を利用した納品をさせていただきます。"
