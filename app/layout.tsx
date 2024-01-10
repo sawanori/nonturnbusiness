@@ -15,10 +15,32 @@ interface props {
 }
 
 
+const siteName= 'NonTurn.LLC';
+const description = '企業動画・採用動画を撮影するならNonTurn';
+const url = ' https://non-turn.com';
+
+
 export const metadata = {
-  title: 'NonTurn.LLC',
-  description: '横浜で動画撮るならNonTurn',
-}
+  title: {
+    default: siteName,
+    /** `next-seo`の`titleTemplate`に相当する機能 */
+    template: `%s - ${siteName}`,
+  },
+  description,
+  openGraph: {
+    title: siteName,
+    description,
+    url,
+    siteName,
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  alternates: {
+    canonical: url,
+  },
+};
+
+
 const RootLayout:FC<props> = ({children, title}) => {
   return (
     <html lang="ja">
