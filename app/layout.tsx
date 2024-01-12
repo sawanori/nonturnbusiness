@@ -6,6 +6,8 @@ import { SizeObserver } from './utils/size-observer'
 import ScrollObserver from './utils/scroll-observer'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
+import {Toaster} from "react-hot-toast"
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,6 +56,7 @@ const RootLayout:FC<props> = ({children, title}) => {
          <ScrollObserver>
             <Header />
              {children}
+             <Toaster />
              <Footer />
          </ScrollObserver>
        </SizeObserver>

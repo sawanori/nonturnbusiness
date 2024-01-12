@@ -6,7 +6,7 @@ import { Concept } from './components/concept'
 import { Works } from './components/works'
 import { TrustedBy } from './components/trustedby'
 import { MovieList } from './components/movie-list'
-import { ContactUs } from './components/contact-us'
+import { ContactForm } from './components/contactform'
 export default function Home() {
   return (
       <>
@@ -16,7 +16,7 @@ export default function Home() {
        <Mansonry/>
        <MovieList/>
        <TrustedBy/>
-       <ContactUs/>
+       <ContactForm/>
       </>
 
   )
