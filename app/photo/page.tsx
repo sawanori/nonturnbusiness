@@ -6,6 +6,7 @@ import PhotoTop from "../components/phototop"
 import { CategoryWorkflow } from "../components/categoryworkflow"
 import PriceCard from "../components/pricecard"
 import { CategoryWorkFlowBox } from "../components/categoryworkflowbox"
+import { ContactForm } from "../components/contactform"
 
 const Product:FC = () => {
 return (
@@ -61,6 +62,7 @@ return (
        imageUrl="/photo2.jpg"
        imageAlt="画像の説明" 
       />
+      <ContactForm/>
     </>
   )
 }

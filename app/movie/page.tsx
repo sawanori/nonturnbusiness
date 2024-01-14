@@ -4,6 +4,7 @@ import ServiceTop from "../components/servicetop"
 import { CategoryWorkflow } from "../components/categoryworkflow"
 import PriceCard from "../components/pricecard"
 import { CategoryWorkFlowBox } from "../components/categoryworkflowbox"
+import { ContactForm } from "../components/contactform"
 
 const Movie:FC = () => {
   return (
@@ -65,6 +66,7 @@ const Movie:FC = () => {
        imageUrl="/movieprice.jpg"
        imageAlt="画像の説明" 
       />
+      <ContactForm/>
     </>
   )
 }
