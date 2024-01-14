@@ -7,6 +7,7 @@ import { Works } from './components/works'
 import { TrustedBy } from './components/trustedby'
 import { MovieList } from './components/movie-list'
 import { ContactForm } from './components/contactform'
+import { ContactUs } from './components/contact-us'
 export default function Home() {
   return (
       <>
