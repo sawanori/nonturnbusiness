@@ -1,4 +1,4 @@
-import { ReactNode, FC } from 'react'
+import { ReactNode, FC, Suspense } from 'react'
 import Head from 'next/head'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -7,6 +7,7 @@ import ScrollObserver from './utils/scroll-observer'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 import {Toaster} from "react-hot-toast"
+import GoogleAnalytics from './components/GoogleAnalytics'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -46,6 +47,9 @@ export const metadata = {
 const RootLayout:FC<props> = ({children, title}) => {
   return (
     <html lang="ja">
+     <Suspense fallback={<></>}>
+       <GoogleAnalytics />
+      </Suspense>
       <body className={inter.className}>
         <Head>
           <title>{title}</title>
