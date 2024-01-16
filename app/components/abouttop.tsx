@@ -27,7 +27,7 @@ const AboutTop: FC = () => {
             }}
         >
             <Image 
-                src="/abouttoo.jpg" // 画像のパス 
+                src="/shibuya_shot1.jpg" // 画像のパス 
                 layout='fill' // レイアウト設定
                 objectFit='cover' // 画像のフィット設定
                 quality={100} // 画像品質

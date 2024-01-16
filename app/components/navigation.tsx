@@ -35,7 +35,7 @@ export const Navigation: FC = () => {
                         <li className={`${n.navigation__item}`} onClick={closeNavigation}><Link  className={`${n.navigation__link}`} href="/"><span>01</span>top page</Link></li>
                         <li className={`${n.navigation__item}`} onClick={closeNavigation}><Link  className={`${n.navigation__link}`} href="/about"><span>02</span>About</Link></li>
                         <li className={`${n.navigation__item}`} onClick={closeNavigation}><Link  className={`${n.navigation__link}`} href="/movie"><span>03</span>Movie</Link></li>
-                        <li className={`${n.navigation__item}`} onClick={closeNavigation}><Link  className={`${n.navigation__link}`} href="/photo"><span>04</span>photo</Link></li>
+                        <li className={`${n.navigation__item}`} onClick={closeNavigation}><Link  className={`${n.navigation__link}`} href="/photo"><span>04</span>Photo</Link></li>
                     </ul> 
                 </nav>
             </div>
