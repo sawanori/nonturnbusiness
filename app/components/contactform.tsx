@@ -8,6 +8,7 @@ import { toast } from "react-hot-toast"
 import { ContactSchema, ContactType } from "@/schema/contact"
 
 import { Spinner } from "./spinner"
+import Link from "next/link"
 
 
 
@@ -100,7 +101,11 @@ export const ContactForm: FC = () => {
             </button>
           </div>
 
-          <p className="text-xs text-gray-400">By signing up to our newsletter you agree to our <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>.</p>
+          <p className="text-xs text-gray-400">当フォームにて記入された個人情報は当社のプライバシーポリシー・利用規約に同意の上の送信いただいたとみなします。 
+            <Link href="/privacy-policy"  className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">
+                プライバシーポリシー・利用規約
+            </Link>
+          </p>
         </form>
       </div>
     </div>
