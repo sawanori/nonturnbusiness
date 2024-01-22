@@ -57,7 +57,7 @@ return (
 
       <PriceCard
        title="商品撮影プラン" 
-       price="2H:￥50,000"
+       price="2H:￥40,000"
        description="あなたが魅力的に見せたい商品（ex:料理、ECショップ商品）をより魅力的に写真に納めます。撮影日から１週間以内の納品！現像まで行うプランです。表示は税抜です。"
        imageUrl="/photo2.jpg"
        imageAlt="画像の説明" 
