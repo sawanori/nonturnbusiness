@@ -19,8 +19,8 @@ const Movie:FC = () => {
      <CategoryWorkFlowBox
         image="/mtg.png"
         worktitle="企画設定"
-        readtime="３日以内"
-        flow1="動画の目的をヒアリングした上で、進行・演出において撮影の費用感を算出させていただきます。"
+        readtime="7日以内"
+        flow1="動画の目的をヒアリングした上で、貴社が求める動画の進行・演出における全体の費用感を算出させていただきます。"
         section1="撮影設計"
         section2="絵コンテ作成（案件によってビデオコンテ作成"
         section3="見積もり作成"
@@ -41,7 +41,7 @@ const Movie:FC = () => {
         readtime="1ヶ月"
         flow1="撮影素材を元により貴社の目的に沿った編集をさせていただきます。"
         section1="カラーグレーディング"
-        section2="3Dアニメーション"
+        section2="BGM・効果音の追加"
         section3="生成AIを駆使した演出"
       /> 
 
