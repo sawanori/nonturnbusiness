@@ -16,10 +16,7 @@ export const ClientLogs: FC = () => {
             <SliderItem width={150}>
                 <Image src="/logo_frontierhouse.png" width="150" height="150" alt='ponchan' objectFit="contain" />
             </SliderItem>
-            <SliderItem width={150}>
-                <Image src="/1.jpg" width="150" height="150" alt='ponchan' objectFit="contain" />
-            </SliderItem>
-            <SliderItem width={150}>
+              <SliderItem width={150}>
                 <Image src="/logo_hajime.png" width="150" height="150" alt='ponchan' objectFit="contain" />
             </SliderItem>
             <SliderItem width={150}>
